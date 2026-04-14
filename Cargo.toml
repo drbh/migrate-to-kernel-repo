@@ -1,0 +1,10 @@
+[package]
+name = "migrate-to-kernel-repo"
+version = "0.1.0"
+edition = "2021"
+description = "Migrate Hugging Face Hub model repos to kernel repos"
+
+[dependencies]
+huggingface-hub = { git = "https://github.com/huggingface/huggingface_hub_rust.git", features = ["cli"] }
+clap = { version = "4", features = ["derive"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "process"] }
